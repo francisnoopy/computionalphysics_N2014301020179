@@ -1,0 +1,116 @@
+   Excercise 3
+
+作业
+
+---
+
+1.任务
+
+在课程主页上复习这两次课程的内容，初步掌握python和matplotlib的语法规则，为接下来的课程做好准备 
+作业L1 在屏幕上让你的英文名字水平移动起来 
+作业L2 在80*80点阵上用字符拼出你想画的东西，并让它旋转起来，希望脑洞大开！（比如字符、火柴人、火箭等等）
+
+图像平移
+
+import time
+import os
+def print5line(para):
+    for line in para:
+        print(line)
+imgname=['','','','','']
+S=('####','#   ','####','   #','####')
+H=('#  #','#  #','####','#  #','#  #')
+A=('  #  ',' # # ',' # # ',' ### ',' # # ')
+L=('#   ','#   ','#   ','#   ','####')
+E=('####','#   ',' ### ','#   ','####')
+I=('###',' # ',' # ',' # ',' # ','###')
+space=(' ',' ',' ',' ',' ')
+for i in range(5):
+   imgname[i]+=(S[i]+space[i]+H[i]+space[i]+A[i]+space[i]+L[i]+space[i]\
+   +E[i]+space[i]+I[i]+space[i])
+def moveright(text):
+    for i in range(5):
+        text[i]=space[i]+text[i]
+print5line(imgname)
+for i in range(20):
+    moveright(text=imgname)
+    os.system('cls')
+    print5line(imgname)
+    time.sleep(0.1)
+   
+   图像旋转（火柴人）
+   
+import time
+import os
+i= os.system('cls')
+time.sleep(1)
+print('         #          ')
+print('       # # #        ')
+print('         #          ')
+print('   # # # # # # #    ')
+print('         #          ')
+print('       #   #        ')
+print('     #       #      ')
+time.sleep(0.2)
+i= os.system('cls')
+print('              # #   ')
+print('      #       # #   ')
+print('        #   #       ')
+print('          #         ')
+print('    # # #   #       ')
+print('        #      #    ')
+print('        #           ')
+time.sleep(0.2)
+i= os.system('cls')
+print('          #         ')
+print('  #       #         ')
+print('    #     #   #     ')
+print('      # # # # # #   ')
+print('    #     #   #     ')
+print('  #       #         ')
+print('          #         ')
+time.sleep(0.2)
+i= os.system('cls')
+print('     #              ')
+print('     #     #        ')
+print(' # # #   #          ')
+print('       #            ')
+print('     #   #          ')
+print('   #       # #      ')
+print('           # #      ')
+time.sleep(0.2)
+i= os.system('cls')
+print('    #       #       ')
+print('      #   #         ')
+print('        #           ')
+print('  # # # # # # #     ')
+print('        #           ')
+print('      # # #         ')
+print('        #           ')
+time.sleep(0.2)
+i= os.system('cls')
+print('            #       ')
+print('      #     #       ')
+print('        #   # # #   ')
+print('          #         ')
+print('        #   #       ')
+print('    # #        #    ')
+print('    # #             ')
+time.sleep(0.2)
+i= os.system('cls')
+print('        #           ')
+print('        #       #   ')
+print('    #   #     #     ')
+print('  # # # # # #       ')
+print('    #   #     #     ')
+print('        #       #   ')
+print('        #           ')
+time.sleep(0.2)
+i= os.system('cls')
+print(' # #                ')
+print(' # #       #        ')
+print('     #   #          ')
+print('       #            ')
+print('     #   # # #      ')
+print('   #     #          ')
+print('         #          ')
