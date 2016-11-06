@@ -5,3 +5,4 @@
  - [excercise 4]https://www.zybuluo.com/francisnoopy/note/533872
  - [excercise 5]https://www.zybuluo.com/francisnoopy/note/533875
  - [excercise 6]https://www.zybuluo.com/francisnoopy/note/543581
+ - [excercise 7]https://www.zybuluo.com/francisnoopy/note/557998
